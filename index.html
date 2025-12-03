@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Boshi Zhao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: #1f2937;
+      color: white;
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+    header h1 { margin: 0; font-size: 2.1rem; }
+    header p { margin: 0.4rem 0; font-size: 1rem; color: #d1d5db; }
+
+    nav {
+      background: white;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav div {
+      max-width: 900px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0.6rem;
+    }
+    nav a {
+      color: #374151;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 1.5rem;
+    }
+
+    section {
+      background: white;
+      margin-bottom: 1rem;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    section h2 {
+      margin-top: 0;
+      padding-bottom: 0.3rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.5rem;
+      background: #e5e7eb;
+      color: #374151;
+      border-radius: 999px;
+      margin-right: 0.3rem;
+      margin-top: 0.3rem;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #6b7280;
+      padding: 1.5rem 0 2rem 0;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Boshi Zhao</h1>
+  <p>Statistician · Data Scientist · Bayesian Modeling · Health Analytics</p>
+  <p>PhD Candidate in Statistics, Northern Illinois University</p>
+  <p>Email: <a href="mailto:boshi19920920@gmail.com" style="color:#bfdbfe;">boshi19920920@gmail.com</a></p>
+</header>
+
+<nav>
+  <div>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#skills">Skills</a>
+    <a href="#docs">Documents</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      I am a statistician and data scientist specializing in Bayesian modeling,
+      functional data analysis, and health data research. My work focuses on multivariate
+      longitudinal data, latent factor estimation, and methodological development for
+      complex biological and clinical datasets.
+    </p>
+    <p>
+      I am currently completing my PhD in Mathematical Sciences (Statistics) at
+      Northern Illinois University, where I work on Bayesian functional factor models
+      and large-scale health data projects.
+    </p>
+
+    <p><strong>Research Interests</strong></p>
+    <span class="tag">Bayesian modeling</span>
+    <span class="tag">Functional data analysis</span>
+    <span class="tag">Factor models</span>
+    <span class="tag">Longitudinal analysis</span>
+    <span class="tag">Biostatistics</span>
+    <span class="tag">Machine learning</span>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+
+    <p><strong>Bayesian Functional Factor Models</strong><br>
+    Developing Bayesian methods for multivariate longitudinal processes, including
+    eigenfunction estimation, temporal smoothing, and MCMC factor alignment.</p>
+
+    <p><strong>Social Determinants of Health</strong><br>
+    Analysis of perceived healthcare discrimination, body composition, chronic pain,
+    and health disparities using national health datasets.</p>
+
+    <p><strong>Applied Consulting</strong><br>
+    Three years of consulting experience supporting projects in medicine, public health,
+    transportation, and education. Responsibilities include data cleaning, modeling,
+    reproducible workflows, and report writing.</p>
+
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>
+      <span class="tag">R</span>
+      <span class="tag">Python</span>
+      <span class="tag">SQL</span>
+      <span class="tag">SAS</span>
+      <span class="tag">Machine Learning</span>
+      <span class="tag">Bayesian MCMC</span>
+      <span class="tag">High performance computing</span>
+    </p>
+  </section>
+
+  <section id="docs">
+    <h2>Documents</h2>
+    <p>You can download my materials here:</p>
+    <p>
+      <a href="Boshi Zhao Reseume.pdf" target="_blank">Resume (Industry)</a><br>
+      <a href="Boshi_Zhao_CV.pdf" target="_blank">Academic CV</a>
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:boshi19920920@gmail.com">boshi19920920@gmail.com</a></p>
+    <p>
+      <a href="https://github.com" target="_blank">GitHub</a> |
+      <a href="https://scholar.google.com" target="_blank">Google Scholar</a> |
+      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+    </p>
+  </section>
+
+</div>
+
+<footer>
+  © <span id="year"></span> Boshi Zhao
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
